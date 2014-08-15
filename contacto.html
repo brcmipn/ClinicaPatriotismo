@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Web Clinica Patriotismo">
+    <meta name="author" content="Brian R. Campos Miranda">
+
+    <title>Clínica Patriotismo</title>
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/patriotismo.css" rel="stylesheet" type="text/css">
+    <!-- CSS SLIDER -->
+    <link rel="stylesheet" type="text/css" href="css/pictureflip.css" />
+
+    <!-- JS SLIDER -->
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <!-- JS -->
+    <script src="js/patriotismo.js"></script>
+  
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<script>
+  
+  var telas1 = 0;
+  
+  $(document).ready(function(){
+    
+      $.extend(jQuery.validator.messages,{
+        required: " *",
+        email: "Por favor ingresa un correo valido.",
+      });
+
+    $('#form1').validate();
+
+  });  
+
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="index.html"><img src="img/header.png" alt="logo" id="img_logo"/></a>
+        <div id="logos">
+            <a href="https://www.google.com/maps/dir//19.383565,-99.1837063/@19.384139,-99.183862,16z/data=!4m3!4m2!1m0!1m0?hl=es-ES"><img src="img/google.png" alt="googleMaps"/></a>
+            <a href="https://es-es.facebook.com/clinicapatriotismo"><img src="img/facebook.png" alt="facebook"/></a>
+            <a href="http://twitter.com/clinicapatriotismo"><img src="img/twitter.png" alt="twitter"/></a>
+        </div>
+        <div id="telefonos">
+            Tel. 55.63.40.00<br>
+            55.63.23.80
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="nuestros_servicios.html">Nuestros Servicios</a></li>
+                <li><a href="promociones.html">Paquetes y Promociones</a></li>
+                <li><a href="directorio.html">Directorio Médico</a></li>
+                <li class="sinmargen"><a class="sinmargen" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="cinta"></div>
+
+    </header>
+
+    <div class="content">
+        
+        <div id="imagecontacto">
+            <br><br>
+            <img id="textrenta" src="img/textcontacto.png" alt="Contacto"/><br><br>
+            <img id="textrenta" src="img/textcontacto2.png" alt="Contacto"/>
+            <br><br>
+            
+        </div>
+
+        <div id="formulario">
+            <form id="form1" name="form1" method="post" action="procesar.php">
+
+                <div class="campo"><label>Nombre: </label/><input class="required" name="nombre" type="text" id="nombre" /></div><br>
+
+                <div class="campo"><label>Email: </label><input class="required" name="email" type="text" id="email" /></div><br>
+
+                <div class="campo"><label>Teléfono: </label><input class="required" name="telefono" type="text" id="telefono" /></div><br>
+                    
+                <div class="campo"><label>Comentario: </label></div><br>
+
+                <div class="campo"><input id="comentario" class="required" name="comentario" type="textarea" id="comentario" /></div>
+                
+                <input type="submit" id="btnenviar" value="Enviar">
+
+            </form>
+        </div>
+
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d3763.6537576377154!2d-99.18386183470474!3d19.38413930422079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e6!4m0!4m3!3m2!1d19.383565!2d-99.1837063!5e0!3m2!1ses!2smx!4v1404705233839" width="600" height="450" frameborder="0" style="border:0"></iframe>
+
+        <a href="aviso.html"><img src="img/aviso.png"/ id="aviso"></a>
+
+    </div>
+
+
+        <!-- CARRUSEL -->
+    
+        <a href="index.html" id="regresar3">Regresar a HOME</a>
+        
+        <!--
+       <div id="marco1">
+            <div id="marquesina">       
+                <img id="imagen" src="img/mar2.jpg"></div>
+            </div>
+        </div>-->
+        <!-- FIN CARRUSEL -->
+
+    </div>
+
+    <footer class="footera" id="footer_checkups">
+
+        <div id="eslogan">SERVICIOS DE EXCELENCIA A BAJOS COSTOS.</div>
+        <div id="direccion">Av. Patriotismo 573 Colonia Ciudad de los Deportes Deleg. Benito Juárez  C.P. 03710</div>
+        <br><br>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+<style>
+
+table{
+  text-align: righ;
+}
+
+.error{
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+
+<script>
+  
+  var telas1 = 0;
+  
+  $(document).ready(function(){
+    
+      $.extend(jQuery.validator.messages,{
+        required: " Campo requerido",
+        email: "Por favor ingresa un correo valido.",
+      });
+
+    $('#form1').validate();
+
+  });  
+
+
+</script>
+
+<body>
+
+  <form id="form1" name="form1" method="post" action="procesar.php">
+
+    <table width="520">
+
+    <tr>
+      <td><label>Nombre ( * )</label/></td>
+      <td><input class="required" name="nombre" type="text" id="nombre" /></td>
+    </tr>
+
+    <tr>
+      <td><label>Email ( * )</label></td>
+      <td><input class="required" name="email" type="text" id="email" /></td>
+    </tr>
+
+    <tr>
+      <td><label>Teléfono ( * )</label></td>
+      <td><input class="required" name="telefono" type="text" id="telefono" /></td>
+    </tr>
+
+    <tr>
+      <td><label>Comentario: </label></td>
+      <td><input class="required" name="telefono" type="text" id="telefono" /></td>
+    </tr>
+
+    </table>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>

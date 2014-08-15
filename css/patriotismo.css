@@ -1,0 +1,486 @@
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    
+}
+
+#intro{
+    background-color: #1C9FD8;
+    width: 95%;
+    color: white;
+    min-height: 600px;
+    padding: -5px -5px;
+    line-height: 70px;
+    border-radius: 20px;
+    margin: auto;
+    min-width: 1100px;
+}
+
+#serviciosintro{
+    width: 25%; 
+    margin: auto;
+    font-size: 130%;
+    margin-top: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 800;
+}
+
+.wrapper{
+    width: 90%;
+    min-width: 1230px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#logos,#telefonos{
+    float: right;
+}
+
+#telefonos{
+    margin-top: 70px;
+    margin-right: -120px;
+    font-size: 30px;
+    color: #1C9FD8;
+    text-align: right;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+#menu{
+    background-color: #1C9FD8;
+    margin-top: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 0px;
+    min-width: 1100px;
+}
+
+#menu *{
+    list-style: none;
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: white;    
+}
+
+#menu ul{
+    position: absolute;
+}
+
+
+#img1,#img2,#img3,#img4{
+    
+}
+
+.prev,.next{
+    visibility: hidden;
+}
+
+.footer{
+    float: right;
+    margin-top: -130px;
+    font-size: 20px;
+
+}
+
+.footer div{
+    padding-top: 10px;
+}
+
+#eslogan{
+    color: #1C9FD8;
+    text-align: right;  
+    font-size: 25px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#direccion{
+    background-color: #1C9FD8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#servicios *{
+    margin-left: 70px;
+    margin-bottom: 10px;
+}
+
+#servicios21{
+    margin-left: 370px;
+    float: left;
+    margin-top: -182px;
+}
+
+#aviso{
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+#cinta{
+    height: 20px;
+    background-color: #8DD2F1;
+    border-radius: 5px;
+    margin-top: -5px;
+}
+
+
+#quienes_somos a{
+    text-decoration: none;
+    color: #1C9FD8;
+}
+
+
+#qs_info{
+    width: 700px;
+    text-align: justify;
+    background-color: #1C9FD8;
+    border-radius: 6px;
+    margin-left: 500px;
+    padding: 35px;
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#qs_enlaces{
+    float: left;
+    margin-left: 50px;
+    margin-top: 0px;
+    color: #1C9FD8;
+}
+
+#valores1{
+    float: left;
+}
+
+#valores2{
+    float: right;
+    margin-right: 90px;
+}
+
+#imgrenta{
+    float: left;
+    margin-top: 50px;
+}
+
+#textrenta{
+    float: left;
+}
+
+#pararenta{
+    width: 660px;
+    text-align: justify;
+    background-color: #8DD2F1;
+    color: #1C3E83;
+    float: right;
+    margin-right: 120px;
+    padding: 50px 25px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    height: 400px;
+}
+
+#paraquirofano{
+    width: 660px;
+    text-align: justify;
+    background-color: #8DD2F1;
+    color: #1C3E83;
+    float: right;
+    margin-right: 120px;
+    padding: 50px 25px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    height: 300px;
+}
+
+#paraquirofano0{
+    margin-top: 20px;
+    margin-left: 25px;
+    float: left;
+}
+
+
+#directorio{
+    width: 760px;
+    text-align: justify;
+    color: #1C9FD8;
+    float: left;
+    padding: 50px 25px;
+    margin-bottom: 20px;
+    font-weight: 100;
+
+}
+
+#imagerenta{
+    padding-right: 20px;
+}
+
+#imagecontacto{
+    margin-left: 50px;
+}
+
+.interlineado *{
+    line-height: 23px;
+}
+
+#btn_paquetes{
+    background-color: #F5F4F4;
+    float: right;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #1C9FD8;
+}
+
+#lista_servicios{
+    list-style: none;
+    font-size: 19px;
+}
+
+#footer_renta{
+    margin-top: 20px;
+}
+
+#regresar_renta{
+    margin-top: 130px;
+}
+
+#titrentaqui{
+    color: #017EC0;
+    margin-left: 40px;
+}
+
+
+#regresar1{
+    float: right;
+    margin-right: 80px;
+    text-decoration: none;
+    color: #1C3E83;
+    font-size: 17px;
+}
+
+#regresar2{
+    float: right;
+    margin-right: 80px;
+    text-decoration: none;
+    color: #1C3E83;
+    margin-top: 400px;
+}
+
+#regresar3{
+    float: right;
+    margin-right: -580px;
+    text-decoration: none;
+    color: #1C3E83;
+    margin-top: 480px;
+}
+
+#regresar4{
+    float: right;
+    
+}
+
+#footer_checkups{
+    float: right;
+    font-size: 20px;
+    margin-top: 20px;
+    margin: 1px solid red;    
+    margin-left: 420px;
+    min-width: 700px;
+}
+
+#nombredoctor{
+    margin-top: 360px;
+    width: 400px;
+    color: #0967B0;
+}
+
+#curriculumdoctor{
+    margin-top: 10px;
+    text-align: right;
+    width: 400px;
+    color: #1C3E83;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+#imgdoctor{
+     float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.enlace{
+    color: #1C3E83;
+}
+
+#paraendos{
+    width: 660px;
+    text-align: justify;
+    background-color: #8DD2F1;
+    color: #1C3E83;
+    float: right;
+    margin-right: 120px;
+    padding: 50px 25px;
+    margin-top: -400px;
+    height: 400px;
+    overflow: scroll;
+
+    font-weight: 100;
+}
+
+#curriculum{
+    height: 380px;
+    overflow: scroll;
+}
+
+#mapa{
+    float: right;
+    margin-right: 100px;
+}
+
+#formulario{
+    float: left;
+    width: 385px;
+    background-color: #017EC0;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    height: 500px;
+    margin-left: 50px;
+}
+
+#formulario *{
+    margin-top: 5px;
+}
+
+.required{
+    border-radius: 30px;
+    color: #017EC0;
+}
+
+#comentario{
+    width: 350px;
+    height: 160px;
+    color: #1C3E83;
+    margin: auto;
+    text-align: left;
+}
+
+.campo{
+    margin-right: 10px;
+
+}
+
+#btnenviar{
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: #1C3E83;   
+}
+
+
+.fluid_container *{
+    z-index: 10;
+}
+
+
+#foto1{
+    width: 450px;
+    height: 80px;
+    float: right;
+    margin-top: 210px;
+}
+
+
+/* BARRAS */
+
+.flexcroll{
+    scrollbar-face-color: white;
+    scrollbar-shadow-color: white;
+    scrollbar-highlight-color: white;
+    scrollbar-3dlight-color: white;
+    scrollbar-darkshadow-color: none;
+    scrollbar-track-color: blue;
+    scrollbar-arrow-color: white;
+}
+
+/* Let's get this party started */
+.flexcroll::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.flexcroll::-webkit-scrollbar-track {
+    background: #1C9FD8;
+    -webkit-box-shadow: inset 0 0 0px #1C3E83;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.flexcroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: inset 0 0 1px #1C3E83;
+}
+
+/* CARRUSEL */
+
+#marco1{
+    overflow: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;   
+}
+
+#imagen{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+#marco1:hover{
+    -ms-transform: scale(1.3,1.3);
+    -webkit-transform: scale(1.5,1.5);
+    -moz-transform: scale(1.5,1.5);
+    -o-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    -webkit-transition-timing-function: ease-on;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 300ms;
+    position: relative;
+
+}
+
+#avisodeprivacidad{
+    background-color: #8DD2F1;
+}
+
+
+#avisodeprivacidad p{
+    padding: 25px;
+    color: #1C3E83;
+}
+
+/* FIN CARRUSEL */
+
+

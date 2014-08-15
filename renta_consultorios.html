@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Web Clinica Patriotismo">
+    <meta name="author" content="Brian R. Campos Miranda">
+
+    <title>Clínica Patriotismo</title>
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/patriotismo.css" rel="stylesheet" type="text/css">
+    <!-- CSS SLIDER -->
+    <link rel="stylesheet" type="text/css" href="css/pictureflip.css" />
+
+    <!-- JS SLIDER -->
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.pictureflip.js"></script>
+    <!-- JS -->
+    <script src="js/patriotismo.js"></script>
+
+
+    <!-- CARRUSEL -->
+    <script type="text/javascript">
+
+    var j=0, band = 0; tam = 2600;
+
+    $(window).load(inicio);
+
+    $(window).load(over1);
+
+    $(window).load(over2);
+
+    function over1(){
+      $('#marco1').mouseover(function(){
+        $('#todo').css('overflow','hidden');
+      });
+    }
+
+    function over2(){
+      $('.wrapper').mouseover(function(){
+        $('#todo').css('overflow','visible');
+      });
+    }    
+
+    function inicio(){
+
+      setInterval(function(){
+      
+        $('#imagen').css("left",j);
+
+        if(band==0){ // VA A DERECHA
+          if(j>-200){
+            band = 1;
+          }
+          else
+            j=j+1;
+        }
+
+        else{
+          if(band==1){
+            j=j-1;
+          }
+          if(j<-tam/2){
+            band = 0;
+          }
+        }
+      },10);
+    }
+
+    </script>
+
+    <!--  FIN CARRUSEL  -->
+  
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="index.html"><img src="img/header.png" alt="logo" id="img_logo"/></a>
+        <div id="logos">
+            <a href="https://www.google.com/maps/dir//19.383565,-99.1837063/@19.384139,-99.183862,16z/data=!4m3!4m2!1m0!1m0?hl=es-ES"><img src="img/google.png" alt="googleMaps"/></a>
+            <a href="https://es-es.facebook.com/clinicapatriotismo"><img src="img/facebook.png" alt="facebook"/></a>
+            <a href="http://twitter.com/clinicapatriotismo"><img src="img/twitter.png" alt="twitter"/></a>
+        </div>
+        <div id="telefonos">
+            Tel. 55.63.40.00<br>
+            55.63.23.80
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="nuestros_servicios.html">Nuestros Servicios</a></li>
+                <li><a href="promociones.html">Paquetes y Promociones</a></li>
+                <li><a href="directorio.html">Directorio Médico</a></li>
+                <li class="sinmargen"><a class="sinmargen" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="cinta"></div>
+
+    </header>
+
+    <div class="content">
+        
+        <div id="imagerenta">
+            <br><br>
+            <img id="textrenta" src="img/textrenta.png" alt="Renta consultorios desde 7000"/><br><br>
+            <img id="imgrenta" src="img/imgrenta.png" alt="Consultorios"/>
+        </div>
+
+        <div id="pararenta">
+            
+            <ul id="lista_servicios" class="interlineado">
+
+            <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="8px" height="8px" viewBox="0 0 5.8 5.8" enable-background="new 0 0 5 5" xml:space="preserve"><defs></defs><rect x="0" y="0" fill="#1D3F84" width="7.8" height="7.8"/> </svg>
+                Servicio de limpieza.
+            </li>
+
+            <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="8px" height="8px" viewBox="0 0 5.8 5.8" enable-background="new 0 0 5 5" xml:space="preserve"><defs></defs><rect x="0" y="0" fill="#1D3F84" width="7.8" height="7.8"/> </svg>
+                Servicio de recepcionista para agendación de citas y atención de pacientes
+            </li>
+
+            <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="8px" height="8px" viewBox="0 0 5.8 5.8" enable-background="new 0 0 5 5" xml:space="preserve"><defs></defs><rect x="0" y="0" fill="#1D3F84" width="7.8" height="7.8"/> </svg>
+                Incluye servicios
+            </li>
+
+            <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="8px" height="8px" viewBox="0 0 5.8 5.8" enable-background="new 0 0 5 5" xml:space="preserve"><defs></defs><rect x="0" y="0" fill="#1D3F84" width="7.8" height="7.8"/> </svg>
+                Teléfono e Internet
+            </li>
+
+            <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="8px" height="8px" viewBox="0 0 5.8 5.8" enable-background="new 0 0 5 5" xml:space="preserve"><defs></defs><rect x="0" y="0" fill="#1D3F84" width="7.8" height="7.8"/> </svg>
+                Servicio de vigilancia las 24 horas del día
+            </li>
+
+            <li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="8px" height="8px" viewBox="0 0 5.8 5.8" enable-background="new 0 0 5 5" xml:space="preserve"><defs></defs><rect x="0" y="0" fill="#1D3F84" width="7.8" height="7.8"/> </svg>
+                Circuito cerrado
+            </li>
+
+            <br><br>
+
+            </ul>       
+            
+            <br><br><br><br><br><br><br>
+
+
+            <a href="index.html" id="regresar4">Regresar a HOME</a>
+
+        </div>
+    
+        <br>
+        
+
+
+    </div>
+
+        <!-- CARRUSEL -->
+        
+        
+       <!-- <div id="marco1">
+            <div id="marquesina">       
+                <img id="imagen" src="img/mar.jpg"></div>
+            </div>
+        </div>
+    -->
+        <!-- FIN CARRUSEL -->
+
+    </div>
+
+    <footer class="footer" id="footer_renta">
+
+        <div id="eslogan">Servicio Médico Confiable. Conócenos.</div>
+        <div id="direccion">Av. Patriotismo 573 Colonia Ciudad de los Deportes Deleg. Benito Juárez  C.P. 03710</div>
+        <br><br>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+

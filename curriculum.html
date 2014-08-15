@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Web Clinica Patriotismo">
+    <meta name="author" content="Brian R. Campos Miranda">
+
+    <title>Clínica Patriotismo</title>
+
+    <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/patriotismo.css" rel="stylesheet" type="text/css">
+    <!-- CSS SLIDER -->
+    <link rel="stylesheet" type="text/css" href="css/pictureflip.css" />
+
+    <!-- JS SLIDER -->
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.pictureflip.js"></script>
+    <!-- JS -->
+    <script src="js/patriotismo.js"></script>
+
+
+    <!-- CARRUSEL -->
+    <script type="text/javascript">
+
+    var j=0, band = 0; tam = 2600;
+
+    $(window).load(inicio);
+
+    $(window).load(over1);
+
+    $(window).load(over2);
+
+    function over1(){
+      $('#marco1').mouseover(function(){
+        $('#todo').css('overflow','hidden');
+      });
+    }
+
+    function over2(){
+      $('.wrapper').mouseover(function(){
+        $('#todo').css('overflow','visible');
+      });
+    }    
+
+    function inicio(){
+
+      setInterval(function(){
+      
+        $('#imagen').css("left",j);
+
+        if(band==0){ // VA A DERECHA
+          if(j>-200){
+            band = 1;
+          }
+          else
+            j=j+1;
+        }
+
+        else{
+          if(band==1){
+            j=j-1;
+          }
+          if(j<-tam/2){
+            band = 0;
+          }
+        }
+      },10);
+    }
+
+    </script>
+
+    <!--  FIN CARRUSEL  -->
+  
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header>
+        <a href="index.html"><img src="img/header.png" alt="logo" id="img_logo"/></a>
+        <div id="logos">
+            <a href="https://www.google.com/maps/dir//19.383565,-99.1837063/@19.384139,-99.183862,16z/data=!4m3!4m2!1m0!1m0?hl=es-ES"><img src="img/google.png" alt="googleMaps"/></a>
+            <a href="https://es-es.facebook.com/clinicapatriotismo"><img src="img/facebook.png" alt="facebook"/></a>
+            <a href="http://twitter.com/clinicapatriotismo"><img src="img/twitter.png" alt="twitter"/></a>
+        </div>
+        <div id="telefonos">
+            Tel. 55.63.40.00<br>
+            55.63.23.80
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a href="quienes_somos.html">Quienes Somos</a></li>
+                <li><a href="nuestros_servicios.html">Nuestros Servicios</a></li>
+                <li><a href="promociones.html">Paquetes y Promociones</a></li>
+                <li><a href="directorio.html">Directorio Médico</a></li>
+                <li class="sinmargen"><a class="sinmargen" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="cinta"></div>
+
+    </header>
+
+    <div class="content">
+        <div id="info">
+        <div id="imagerenta">
+            <br><br>
+            <img id="textendoscopia" src="img/textendoscopia.png" alt="Endoscopia"/><br><br>
+            <img id="imgdoctor" src="img/doctor.png" alt="DR. MAURO EDUARDO RAMíREZ SOLíS"/>
+            <div id="nombredoctor">DR. MAURO EDUARDO RAMíREZ SOLÍS</div><br>
+            
+        </div>
+
+        <div id="paraendos">
+            
+            <div id="curriculum" class="flexcroll">
+
+            FORMACIÓN ACADEMICA<br><br>
+
+            - Educación Profesional  Facultad de Medicina. Ciudad Universitaria. Universidad Nacional Autónoma de México<br><br>
+
+            - Educación de Posgrado: Especialidad de Cirugía General. SSA  Hospital Dr. Manuel Gea González <br><br>
+
+            - Especialidad en Cirugía Laparoscópica<br>
+            SSA. Hospital General Dr. Manuel Gea<br>
+            UNAM<br><br>
+
+            -  Especialidad en Endoscopia Diagnóstica<br>
+            INCAN México<br>
+            UNAM<br>
+            Ciclo 2003-2004.<br><br>
+
+            -  Especialidad en Endoscopia Terapéutica<br>
+            INCAN México<br>
+            UNAM<br><br>
+
+            - Certificación Consejo Mexicano de Cirugía 2001<br><br>
+
+            - Cédula de Especialidad AEIE- 33499<br><br>
+
+            SOCIEDADES EN ACTIVO<br><br>
+
+            - Asociación Mexicana de Cirugia General<br><br>
+            - Asociación Mexicana de Endoscopia Gastointestinal<br><br>
+            - Asociación Mexicana de Cirugia Endoscopica<br><br>
+            - Sociedad Médica del Instituto Nacional de Cancerologia<br><br><br>
+
+            ACTIVIDAD ACADÉMICA<br><br>
+
+            - PROFESOR DE CURSO DE POSGRADO UNAM<br>
+            ENDOSCOPIA GASTROINTESTINAL<br><br>
+
+            - PROFESOR DE CURSO DE POSGRADO UNAM<br>
+            ESPECIALIDAD EN CIRUGIA GENERAL<br><br>
+
+            ACTIVIDAD EDITORIAL<br><br>
+
+            Autor de múltiples publicaciones médicas, capítulos de libros de especialidad y participación como profesor en  foros, cursos y congresos de especialidad nacionales e internacionales.
+            
+            </div>
+            
+        </div>
+    </div>
+    
+        <br>
+        
+
+    </div>
+
+        <!-- CARRUSEL -->
+        
+        
+       <!-- <div id="marco1">
+            <div id="marquesina">       
+                <img id="imagen" src="img/mar.jpg"></div>
+            </div>
+        </div>
+    -->
+        <!-- FIN CARRUSEL -->
+
+    </div>
+
+    <footer class="footer" id="footer_renta">
+
+        <a href="index.html" id="regresar1">Regresar a HOME</a>
+
+        <br><br>
+
+        <div id="eslogan">SERVICIOS DE EXCELENCIA A BAJOS COSTOS.</div>
+        <div id="direccion">Av. Patriotismo 573 Colonia Ciudad de los Deportes Deleg. Benito Juárez  C.P. 03710</div>
+        <br><br>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
